@@ -4,16 +4,36 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>株式会社ミノリカ</title>
+
+    <link rel="canonical" href="https://minorica-agri.com/">
+
+    <link rel="alternate" href="https://minorica-agri.com/" hreflang="ja">
+    <link rel="alternate" href="https://minorica-agri.com/" hreflang="en">
+    <link rel="alternate" href="https://minorica-agri.com/" hreflang="x-default">
+    <meta name="description" content="株式会社ミノリカは、高温障害に打ち勝つバイオスティミュラント技術を研究開発するバイオテクノロジー会社です。気候変動下の持続可能な食料生産システムに貢献します。">
+    <meta name="keywords" content="MINORICA, ミノリカ, バイオスティミュラント, アグリテック, 高温障害, MINORICA Inc., 株式会社, 平田裕也, Yuya Hirata">
+    <meta name="author" content="株式会社MINORICA">
+    <meta property="og:title" content="株式会社ミノリカ">
+    <meta property="og:description" content="株式会社ミノリカは、高温障害に打ち勝つバイオスティミュラント技術を研究開発するバイオテクノロジー会社です。気候変動下の持続可能な食料生産システムに貢献します。">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://minorica-agri.com">
+    <meta property="og:image" content="https://minorica-agri.com/assets/img/logo_ogp.png">
+    <meta name="twitter:card" content="summary_large_image">
+
+    <meta name="description" content="株式会社ミノリカは、高温障害に打ち勝つバイオスティミュラント技術で、持続可能な食料生産システムに貢献するアグリテック企業です。">
     <link rel="stylesheet" href="assets/css/style.css">
     <script src="https://www.google.com/recaptcha/api.js?render=6LdkloErAAAAAHW7rMxD5FePWX5q5W7EeSjTbTvO"></script>
-    <!-- 上のこれはGoogle reCAPTCHA v3のサイトキー -->
     <link rel="icon" href="assets/img/logo_only.png" type="image/png"> 
 </head>
 <body>
     <header>
         <div class="container">
+            
             <div class="logo">
-                <a href="#top"><img src="assets/img/logo_only.png" alt="MINORICA ロゴ" class="company-logo">MINORICA</a>
+                <a href="#top">
+                    <img src="assets/img/logo_only.png" alt="株式会社MINORICAのロゴ" class="company-logo">
+                    <span class="logo-text">MINORICA</span>
+                </a>
             </div>
             <div class="menu-toggle" id="mobile-menu">
                 <span class="bar"></span>
@@ -22,11 +42,10 @@
             </div>
             <nav class="nav-wrapper" id="main-nav">
                 <ul>
-                    <!-- <li><a href="#philosophy-section">企業理念</a></li> -->
-                    <li><a href="#products-section">製品紹介</a></li>
-                    <li><a href="#members-section">メンバー</a></li>
-                    <li><a href="#company-section">会社情報</a></li>
-                    <li><a href="#contact-section">お問い合わせ</a></li>
+                    <li><a href="#products-section" data-key="nav_products">製品紹介</a></li>
+                    <li><a href="#members-section" data-key="nav_members">メンバー</a></li>
+                    <li><a href="#company-section" data-key="nav_company">会社情報</a></li>
+                    <li><a href="#contact-section" data-key="nav_contact">お問い合わせ</a></li>
                 </ul>
             </nav>
             <div class="lang-switcher">
@@ -39,72 +58,31 @@
     <main>
         <section class="hero-section" id="top">
             <div class="container">
-                <h1>高温障害に打ち勝つ<br>バイオスティミュラント技術。</h1>
-                <p>気候変動下の穀物生産を支えるため、アルコールバイオスティミュラントを研究開発・社会実装するバイオテクノロジー会社です。</p>
-                <!-- <a href="#products-section" class="btn" style="margin-top: 40px;">製品を見る</a> -->
+                <h1 data-key="hero_h1">植物を強化し<br>農業を加速させる</h1>
+                <p data-key="hero_p">植物自身のストレス耐性や代謝機能を活性化させることで、生産物の収量や品質に貢献します。</p>
             </div>
         </section>
 
         <section class="about-section">
             <div class="container content-wrapper">
-                <h2>ABOUT</h2>
-                <p>株式会社ミノリカは、持続可能な食料生産システムの構築を目指し、最先端のバイオテクノロジーを駆使してアルコールバイオスティミュラントの研究開発に取り組んでいます。私たちは、世界中の農家の方々が直面する課題を解決し、より豊かで安定した収穫を実現できるよう支援します。</p>
-                <p>地球環境と調和しながら、食料の安定供給に貢献することが私たちの使命です。</p>
-                <!-- <a href="#philosophy-section" class="btn" style="margin-top: 30px;">企業理念を見る</a> -->
+                <h2 data-key="about_h2">ABOUT</h2>
+                <p data-key="about_p1">株式会社ミノリカは、持続可能な食料生産システムの構築を目指し、最先端のバイオテクノロジーを駆使してアルコールバイオスティミュラントの研究開発に取り組んでいます。私たちは、世界中の農家の方々が直面する課題を解決し、より豊かで安定した収穫を実現できるよう支援します。</p>
+                <p data-key="about_p2">地球環境と調和しながら、食料の安定供給に貢献することが私たちの使命です。</p>
             </div>
         </section>
 
-        <!-- <section class="products-section">
-            <div class="container content-wrapper">
-                <h2>製品紹介</h2>
-                <div style="display: flex; flex-wrap: wrap; justify-content: space-around; gap: 30px;">
-                    <div class="product-card">
-                        <h3>収量向上ソリューション</h3>
-                        <p>バイオスティミュラントの力で、作物の生育を促進し、単位面積あたりの収量を大幅に向上させます。安定した収穫は農家の皆様の経営を安定させます。</p>
-                        <img src="assets/img/product_yield.jpg" alt="収量向上">
-                    </div>
-                    <div class="product-card">
-                        <h3>品質改善とストレス耐性強化</h3>
-                        <p>作物の品質を高めるとともに、乾燥や高温、塩害などの環境ストレスに対する耐性を強化。不安定な気候変動にも対応できる農業をサポートします。</p>
-                        <img src="assets/img/product_quality.jpg" alt="品質改善">
-                    </div>
-                </div>
-                <a href="#products-section" class="btn" style="margin-top: 50px;">製品詳細へ</a>
-            </div>
-        </section> -->
-
-        <!-- <section id="philosophy-section">
-            <div class="container content-wrapper">
-                <h2>企業理念</h2>
-                <h3>ミッション</h3>
-                <p>私たちは、最先端のバイオテクノロジー、特にアルコールバイオスティミュラントの研究開発と社会実装を通じて、**持続可能な食料生産システムの構築に貢献**します。気候変動や環境変化に左右されない安定した食料供給を実現し、世界中の人々の豊かな食生活を支えることが私たちの使命です。</p>
-
-                <h3>ビジョン</h3>
-                <p>「農と科学の融合」を掲げ、バイオスティミュラント技術のパイオニアとして、農業の可能性を最大限に引き出す未来を創造します。革新的な技術で、生産者の収益性向上と、消費者の安心・安全な食へのアクセスを両立させ、**次世代に持続可能な地球環境と食料システムを引き継ぐ**ことを目指します。</p>
-
-                <h3>バリュー</h3>
-                <ul>
-                    <li><strong>革新性 (Innovation)</strong>: 常に最先端の研究に取り組み、既成概念にとらわれない新しいソリューションを追求します。</li>
-                    <li><strong>持続可能性 (Sustainability)</strong>: 環境に配慮し、地球と共存する農業技術の開発に力を入れます。</li>
-                    <li><strong>共創 (Collaboration)</strong>: 研究機関、農家、地域社会との連携を深め、共に価値を創造します。</li>
-                    <li><strong>誠実性 (Integrity)</strong>: 透明性と倫理に基づき、信頼される企業活動を行います。</li>
-                    <li><strong>貢献 (Contribution)</strong>: 技術を通じて社会課題を解決し、人々の暮らしと地球環境に貢献します。</li>
-                </ul>
-            </div>
-        </section> -->
-
         <section id="products-section" style="background-color: #eaf7ed;">
             <div class="container content-wrapper">
-                <h2>製品紹介</h2>
+                <h2 data-key="products_h2">製品紹介</h2>
 
                 <div class="product-item">
                     <div>
                         <img src="assets/img/product.png" alt="アルコールバイオスティミュラントとは">
                     </div>
                     <div>
-                        <h3>アルコールバイオスティミュラント（ABS）とは</h3>
-                        <p>バイオスティミュラント（BS）は、植物の生体活動を促進し、生育環境の変化に適応する能力を高めるための画期的な農業資材です。化学肥料や農薬とは異なり、植物本来の生理機能を引き出すことで、近年国内外で注目が集まっています。</p>
-                        <p>我々のアルコールバイオスティミュラントは、特に強力な効果が実証されており、特に米や小麦といった主要穀物の生産現場で効力を発揮します。液状で粘度も低いため、ドローンによる高速散布も可能です。また、我々は植物のABS吸収効率を高めるための資材も独自に研究開発しています。</p>
+                        <h3 data-key="products_h3">アルコールバイオスティミュラント（ABS）とは</h3>
+                        <p data-key="products_p1">バイオスティミュラント（BS）は、植物の生体活動を促進し、生育環境の変化に適応する能力を高めるための画期的な農業資材です。化学肥料や農薬とは異なり、植物本来の生理機能を引き出すことで、近年国内外で注目が集まっています。</p>
+                        <p data-key="products_p2">我々のアルコールバイオスティミュラントは、特に強力な効果が実証されており、特に米や小麦といった主要穀物の生産現場で効力を発揮します。液状で粘度も低いため、ドローンによる高速散布も可能です。また、我々は植物のABS吸収効率を高めるための資材も独自に研究開発しています。</p>
                     </div>
                 </div>
 
@@ -112,28 +90,25 @@
                         <img src="assets/img/tech.png" alt="品質改善とストレス耐性">
                     </div>
                     <div>
-                        <h3>ABSの特徴</h3>
+                        <h3 data-key="products_h3_2">ABSの特徴</h3>
                         <ul>
-                            <li><strong>収量向上:</strong> 作物の光合成効率を高め、根の張りを良くすることで、大幅な収量増を期待できます。</li>
-                            <li><strong>品質改善:</strong> 穀物のタンパク質含有量や糖度など、栄養価や食味の向上に寄与します。</li>
-                            <li><strong>ストレス耐性強化:</strong> 乾燥、高温、低温、塩害などの非生物的ストレスから作物を保護し、生育不良のリスクを低減します。</li>
-                            <li><strong>コスト効率:</strong> 安価な資材だけで生産・運用でき、一般の化学肥料やBSと比べて高い持続可能性を持ちます。</li>
-                            <li><strong>高い安全性:</strong> pH中性かつ自然由来の成分を使用しており、土壌に優しい製品です。</li>
+                            <li data-key="products_ul_li_1"><strong>収量向上:</strong> 作物の光合成効率を高め、根の張りを良くすることで、大幅な収量増を期待できます。</li>
+                            <li data-key="products_ul_li_2"><strong>品質改善:</strong> 穀物のタンパク質含有量や糖度など、栄養価や食味の向上に寄与します。</li>
+                            <li data-key="products_ul_li_3"><strong>ストレス耐性強化:</strong> 乾燥、高温、低温、塩害などの非生物的ストレスから作物を保護し、生育不良のリスクを低減します。</li>
+                            <li data-key="products_ul_li_4"><strong>コスト効率:</strong> 安価な資材だけで生産・運用でき、一般の化学肥料やBSと比べて高い持続可能性を持ちます。</li>
+                            <li data-key="products_ul_li_5"><strong>高い安全性:</strong> pH中性かつ自然由来の成分を使用しており、土壌に優しい製品です。</li>
                         </ul>
                     </div>
                 </div>
 
-                <!-- <h3>導入事例</h3> -->
                 <div style="display: flex; flex-wrap: wrap; justify-content: space-around; gap: 30px;">
                     <div class="case-study">
-                        <h4>事例1: 愛知県 小麦農家</h4>
-                        <p>「夏の猛暑による生育不良が課題でしたが、本バイオスティミュラントを導入したことで、一部の区画では収量が50%増加しました。」</p>
-                        <!-- <img src="assets/img/case_rice.jpg" alt="米農家事例"> -->
+                        <h4 data-key="case_h4_1">事例1: 愛知県 小麦農家</h4>
+                        <p data-key="case_p1">「夏の猛暑による生育不良が課題でしたが、本バイオスティミュラントを導入したことで、一部の区画では収量が50%増加しました。」</p>
                     </div>
                     <div class="case-study">
-                        <h4>事例2: 北海道 コメ農家</h4>
-                        <p>「本製品のおかげで、厳しい気候条件でも安心して作付けできます。高温障害が減ると、出荷時のコメの価格が倍近く変わるので助かっています。」</p>
-                        <!-- <img src="assets/img/case_wheat.jpg" alt="小麦農家事例"> -->
+                        <h4 data-key="case_h4_2">事例2: 北海道 コメ農家</h4>
+                        <p data-key="case_p2">「本製品のおかげで、厳しい気候条件でも安心して作付けできます。高温障害が減ると、出荷時のコメの価格が倍近く変わるので助かっています。」</p>
                     </div>
                 </div>
             </div>
@@ -141,60 +116,53 @@
 
         <section id="members-section">
             <div class="container content-wrapper">
-                <h2>メンバー</h2><br>
-
-
-            <div class="member-grid">
+                <h2 data-key="members_h2">メンバー</h2><br>
+                <div class="member-grid">
                     <div class="member-card">
                         <img src="/assets/img/hirata.jpg" alt="平田裕也">
-                        <h4>CEO　平田 裕也</h4>
-                        <p style="font-size: 14px;">2000年福井県農家生まれ。東京大学工学部物理工学科を首席で卒業後、
+                        <h4 data-key="member_ceo_title_name">CEO　平田 裕也</h4>
+                        <p data-key="member_ceo_desc" style="font-size: 14px;">2000年福井県農家生まれ。東京大学工学部物理工学科を首席で卒業後、
                             先端工学の農業応用に従事。2025年に株式会社ミノリカを創業。経済産業省NEDO Entrepreneur Program採択。</p>
                     </div>
                     <div class="member-card">
                         <img src="/assets/img/nagahama.jpg" alt="長浜義典">
-                        <h4>CTO　長浜 義典</h4>
-                        <p style="font-size: 14px;">九州大学農学部卒業後、アルコールバイオスティミュラントを世界に先駆けて独自開発。全国の農家の方々と密に連携し、製品の導入支援やフィードバック収集を行う。</p>
+                        <h4 data-key="member_cto_title_name">CTO　長浜 義典</h4>
+                        <p data-key="member_cto_desc" style="font-size: 14px;">九州大学農学部卒業後、アルコールバイオスティミュラントを世界に先駆けて独自開発。全国の農家の方々と密に連携し、製品の導入支援やフィードバック収集を行う。</p>
                     </div>
-            </div>
+                </div>
             </div>
         </section>
 
         <section id="company-section" style="background-color: #eaf7ed;">
             <div class="container content-wrapper">
-                <h2>会社情報</h2>
+                <h2 data-key="company_h2">会社情報</h2>
 
                 <table class="company-info-table">
                     <tr>
-                        <th>会社名</th>
-                        <td>株式会社MINORICA</td>
+                        <th data-key="company_name_th">会社名</th>
+                        <td data-key="company_name_td">株式会社MINORICA</td>
                     </tr>
                     <tr>
-                        <th>所在地</th>
-                        <td>〒113-0023 東京都文京区向丘2丁目3-10 東大前HiRAKU GATE 3F</td>
+                        <th data-key="company_address_th">所在地</th>
+                        <td data-key="company_address_td">〒113-0023 東京都文京区向丘2丁目3-10 東大前HiRAKU GATE 3F</td>
                     </tr>
                     <tr>
-                        <th>設立</th>
-                        <td>2025年2月20日</td>
+                        <th data-key="company_established_th">設立</th>
+                        <td data-key="company_established_td">2025年2月20日</td>
                     </tr>
                     <tr>
-                        <th>資本金</th>
-                        <td>500万円</td>
+                        <th data-key="company_capital_th">資本金</th>
+                        <td data-key="company_capital_td">500万円</td>
                     </tr>
                     <tr>
-                        <th>創業者</th>
-                        <td>
-                            平田 裕也
-                        </td>
+                        <th data-key="company_founder_th">創業者</th>
+                        <td data-key="company_founder_td">平田 裕也</td>
                     </tr>
                     <tr>
-                        <th>事業内容</th>
-                        <td>バイオスティミュラント関連資材の研究開発・製造・販売</td>
+                        <th data-key="company_business_th">事業内容</th>
+                        <td data-key="company_business_td">バイオスティミュラント関連資材の研究開発・製造・販売</td>
                     </tr>
                 </table>
-
-
-             
                 <div class="access-map">
                     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3239.323279027092!2d139.75560581108516!3d35.71826717246101!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x60188c3368764ebd%3A0x4dbe75005d07f69f!2z44CSMTEzLTAwMjMg5p2x5Lqs6YO95paH5Lqs5Yy65ZCR5LiY77yS5LiB55uu77yT4oiS77yR77yQIOadseWkp-WJjUhpUkFLVSBHQVRFIDNm!5e0!3m2!1sja!2sjp!4v1751989242086!5m2!1sja!2sjp" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"  width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade">></iframe>
                 </div>
@@ -203,19 +171,19 @@
 
         <section id="news-section" style="background-color: #f5f5f5;">
             <div class="container content-wrapper">
-                <h2>ニュース</h2>
+                <h2 data-key="news_h2">ニュース</h2>
                 <div class="news-list">
                     <div class="news-item">
                         <span class="news-date">2025.07.01</span>
-                        <a href="https://www.jetro.go.jp/services/j-starx/" class="news-title">経済産業省J-starX若手起業家プログラムに採択</a>
+                        <a href="https://www.jetro.go.jp/services/j-starx/" class="news-title" data-key="news_link1">経済産業省J-starX若手起業家プログラムに採択</a>
                     </div>
                     <div class="news-item">
                         <span class="news-date">2025.04.14</span>
-                        <a href="https://www.1stround.jp/" class="news-title">国内最大規模の技術起業支援プログラム1st Roundに採択</a>
+                        <a href="https://www.1stround.jp/" class="news-title" data-key="news_link2">国内最大規模の技術起業支援プログラム1st Roundに採択</a>
                     </div>
                     <div class="news-item">
                         <span class="news-date">2025.03.27</span>
-                        <a  class="news-title">広島県農業技術指導所にて技術説明会を実施</a>
+                        <a  class="news-title" data-key="news_link3">広島県農業技術指導所にて技術説明会を実施</a>
                     </div>
                     </div>
                 </div>
@@ -223,76 +191,66 @@
 
         <section id="contact-section">
             <div class="container">
-                <h2>お問い合わせ</h2>
-                <p style="text-align: center; margin-bottom: 40px;">ご質問、ご相談などございましたら、下記フォームよりお気軽にお問い合わせください。</p>
+                <h2 data-key="contact_h2">お問い合わせ</h2>
+                <p data-key="contact_desc" style="text-align: center; margin-bottom: 40px;">ご質問、ご相談などございましたら、下記フォームよりお気軽にお問い合わせください。</p>
 
                 <div class="contact-form-wrapper">
                     <form action="submit_contact.php" method="POST">
                         <input type="hidden" name="recaptcha_token" id="recaptcha_token">
-                        <!-- reCAPTCHA格納のための隠しフィールド -->
                         <div class="form-group">
-                            <label for="name">お名前 <span style="color: red;">*</span></label>
+                            <label for="name" data-key="contact_name_label">お名前 <span style="color: red;">*</span></label>
                             <input type="text" id="name" name="name" required>
                         </div>
                         <div class="form-group">
-                            <label for="furigana">フリガナ</label>
+                            <label for="furigana" data-key="contact_furigana_label">フリガナ</label>
                             <input type="text" id="furigana" name="furigana">
                         </div>
                         <div class="form-group">
-                            <label for="company">会社名・団体名</label>
+                            <label for="company" data-key="contact_company_label">会社名・団体名</label>
                             <input type="text" id="company" name="company">
                         </div>
                         <div class="form-group">
-                            <label for="email">メールアドレス <span style="color: red;">*</span></label>
+                            <label for="email" data-key="contact_email_label">メールアドレス <span style="color: red;">*</span></label>
                             <input type="email" id="email" name="email" required>
                         </div>
                         <div class="form-group">
-                            <label for="tel">電話番号</label>
+                            <label for="tel" data-key="contact_tel_label">電話番号</label>
                             <input type="tel" id="tel" name="tel">
                         </div>
                         <div class="form-group">
-                            <label for="inquiry_type">お問い合わせ種別 <span style="color: red;">*</span></label>
+                            <label for="inquiry_type" data-key="contact_inquiry_type_label">お問い合わせ種別 <span style="color: red;">*</span></label>
                             <select id="inquiry_type" name="inquiry_type" required>
-                                <option value="">選択してください</option>
-                                <option value="product">製品に関するお問い合わせ</option>
-                                <option value="press">取材のご依頼</option>
-                                <option value="recruit">採用に関するお問い合わせ</option>
-                                <option value="other">その他</option>
+                                <option value="" data-key="contact_inquiry_type_option_default">選択してください</option>
+                                <option value="product" data-key="contact_inquiry_type_option_product">製品に関するお問い合わせ</option>
+                                <option value="press" data-key="contact_inquiry_type_option_press">取材のご依頼</option>
+                                <option value="recruit" data-key="contact_inquiry_type_option_recruit">採用に関するお問い合わせ</option>
+                                <option value="other" data-key="contact_inquiry_type_option_other">その他</option>
                             </select>
                         </div>
                         <div class="form-group">
-                            <label for="message">お問い合わせ内容 <span style="color: red;">*</span></label>
+                            <label for="message" data-key="contact_message_label">お問い合わせ内容 <span style="color: red;">*</span></label>
                             <textarea id="message" name="message" required></textarea>
                         </div>
-                        <!-- <div class="form-group" style="text-align: left;">
-                            <input type="checkbox" id="privacy_agree" name="privacy_agree" required>
-                            <label for="privacy_agree">
-                                <a href="#privacy-policy-section">プライバシーポリシー</a>に同意する <span style="color: red;">*</span>
-                            </label>
-                        </div> -->
                         <div style="text-align: center;">
-                            <button type="submit" class="submit-btn" id="submitFormButton">送信する</button>
+                            <button type="submit" class="submit-btn" id="submitFormButton" data-key="contact_submit_btn">送信する</button>
                         </div>
                     </form>
                 </div>
-
-
                 <p class="privacy-agreement">
-                    お問い合わせいただく前に、必ず<a href="#privacy-policy-section">プライバシーポリシー</a>をご確認ください。
+                    <span data-key="contact_privacy_agreement">お問い合わせいただく前に、必ず</span><a href="#privacy-policy-section" data-key="contact_privacy_policy_link_text">プライバシーポリシー</a><span data-key="contact_privacy_agreement_end">をご確認ください。</span>
                 </p>
             </div>
         </section>
 
         <section id="privacy-policy-section" style="background-color: #f0f0f0;">
             <div class="container content-wrapper">
-                <h2>プライバシーポリシー</h2>
-                <p>当社は、お問い合わせフォームを通じて、お名前、メールアドレス、電話番号などの個人情報を取得します。これらの個人情報は、以下の目的のために利用いたします。事前にご本人の同意を得ることなく、個人情報を第三者に提供することはありません。</p>
+                <h2 data-key="privacy_h2">プライバシーポリシー</h2>
+                <p data-key="privacy_p">当社は、お問い合わせフォームを通じて、お名前、メールアドレス、電話番号などの個人情報を取得します。これらの個人情報は、以下の目的のために利用いたします。事前にご本人の同意を得ることなく、個人情報を第三者に提供することはありません。</p>
                 <ul>
-                    <li>お問い合わせへの回答およびご連絡のため</li>
-                    <li>当社の製品・サービスに関する情報提供のため</li>
-                    <li>サービスの改善および新たなサービスの開発のため</li>
+                    <li data-key="privacy_li1">お問い合わせへの回答およびご連絡のため</li>
+                    <li data-key="privacy_li2">当社の製品・サービスに関する情報提供のため</li>
+                    <li data-key="privacy_li3">サービスの改善および新たなサービスの開発のため</li>
                 </ul>
-                <!-- <p style="margin-top: 20px; font-size: 14px; text-align: right;">最終更新日: 2025年7月8日</p> -->
             </div>
         </section>
 
@@ -300,7 +258,7 @@
 
     <footer>
         <div class="container">
-            <p>© 2025 MINORICA Co., Ltd. All Rights Reserved.</p>
+            <p data-key="footer_text">© 2025 MINORICA Co., Ltd. All Rights Reserved.</p>
         </div>
     </footer>
 
@@ -313,40 +271,35 @@
             const contactForm = document.querySelector('#contact-section form');
             const submitButton = document.getElementById('submitFormButton');
             const recaptchaTokenField = document.getElementById('recaptcha_token');
-
+    
             if (mobileMenu && mainNav) {
                 mobileMenu.addEventListener('click', function() {
                     mobileMenu.classList.toggle('active');
                     mainNav.classList.toggle('active');
-
-                    // メニューが開いたときにbodyのスクロールを停止する (任意)
+    
                     if (mainNav.classList.contains('active')) {
                         document.body.style.overflow = 'hidden';
                     } else {
                         document.body.style.overflow = '';
                     }
                 });
-
-                // ナビゲーションリンクがクリックされたらメニューを閉じる
+    
                 navLinks.forEach(link => {
                     link.addEventListener('click', function(e) {
-                        // スムーズスクロール
-                        e.preventDefault(); // デフォルトのアンカーリンク動作を無効化
+                        e.preventDefault();
                         const targetId = this.getAttribute('href');
                         const targetSection = document.querySelector(targetId);
-
+    
                         if (targetSection) {
-                            // ヘッダーの高さを考慮してスクロール位置を調整
                             const headerHeight = document.querySelector('header').offsetHeight;
                             const offsetTop = targetSection.offsetTop - headerHeight;
-
+    
                             window.scrollTo({
                                 top: offsetTop,
                                 behavior: 'smooth'
                             });
                         }
-
-                        // モバイルメニューが開いていれば閉じる
+    
                         if (mobileMenu.classList.contains('active')) {
                             mobileMenu.classList.remove('active');
                             mainNav.classList.remove('active');
@@ -356,19 +309,293 @@
                 });
             }
             if (contactForm && submitButton && recaptchaTokenField) {
-            submitButton.addEventListener('click', function(event) {
-            event.preventDefault(); // デフォルトのフォーム送信をキャンセル
-
-            // reCAPTCHAトークンを取得
-            grecaptcha.ready(function() {
-                grecaptcha.execute('6LdkloErAAAAAHW7rMxD5FePWX5q5W7EeSjTbTvO', { action: 'submit_contact' }).then(function(token) {
-                    recaptchaTokenField.value = token; // 隠しフィールドにトークンを設定
-                    contactForm.submit(); // フォームを送信
+                submitButton.addEventListener('click', function(event) {
+                    event.preventDefault();
+                    grecaptcha.ready(function() {
+                        grecaptcha.execute('6LdkloErAAAAAHW7rMxD5FePWX5q5W7EeSjTbTvO', { action: 'submit_contact' }).then(function(token) {
+                            recaptchaTokenField.value = token;
+                            contactForm.submit();
                         });
                     });
                 });
             }
         });
     </script>
+    <script>
+        // ==== 言語切り替え機能（ここから追加） ====
+        const translations = {
+            "ja": {
+                // ... (既存の日本語翻訳コンテンツ)
+                "page_title": "株式会社ミノリカ",
+                "page_description": "株式会社ミノリカは、高温障害に打ち勝つバイオスティミュラント技術を研究開発するバイオテクノロジー会社です。気候変動下の持続可能な食料生産システムに貢献します。",
+                "nav_products": "製品紹介",
+                "nav_members": "メンバー",
+                "nav_company": "会社情報",
+                "nav_contact": "お問い合わせ",
+                "hero_h1": "植物ワクチン技術で<br>農業生産を支える",
+                "hero_p": "植物自身のストレス耐性や代謝機能を活性化させることで、生産物の収量や品質に貢献します",
+                "about_h2": "ABOUT",
+                "about_p1": "株式会社ミノリカは、持続可能な食料生産システムの構築を目指し、植物ワクチンの研究開発に取り組んでいます。私たちは、作物をより強く、より速く、そしてより美味しく育てるバイオ技術を通して、世界中の農業事業者を支援します。",
+                "about_p2": "過酷な気候変動下においても、食の安定供給を可能にすることが私たちの使命です。",
+                "products_h2": "製品紹介",
+                "products_h3": "植物ワクチンとは",
+                "products_p1": "植物ワクチンは、萌芽期から植物の免疫特性を活性化させることで、農作物の成長を促進する画期的な農業資材です。化学肥料や農薬とは異なり、圃場環境を傷つけないため、近年国内外で注目が集まっています。",
+                "products_p2": "特に、我々のアルコールを活用した植物ワクチンは、穀物・果樹の生産現場で効力を発揮します。液状で粘度も低いため、ドローンによる高速散布も可能です。また、我々は植物のワクチン吸収効率を高める技術も独自に開発しています。",
+                "products_h3_2": "弊社製品の特徴",
+                "products_ul_li_1": "<strong>収量向上:</strong> 作物の光合成効率を高め、根の張りを良くすることで、大幅な収量増を期待できます。",
+                "products_ul_li_2": "<strong>品質改善:</strong> 穀物のタンパク質含有量や糖度など、栄養価や食味の向上に寄与します。",
+                "products_ul_li_3": "<strong>ストレス耐性強化:</strong> 乾燥、高温、低温、塩害などの非生物的ストレスから作物を保護し、生育不良のリスクを低減します。",
+                "products_ul_li_4": "<strong>コスト効率:</strong> 安価な資材だけで生産・運用でき、一般の化学肥料やバイオスティミュラントと比べて高い持続可能性を持ちます。",
+                "products_ul_li_5": "<strong>高い安全性:</strong> pH中性かつ自然由来の成分を使用しており、土壌に優しい製品です。",
+                "case_h4_1": "事例1: 愛知県 小麦農家",
+                "case_p1": "「夏の猛暑による生育不良が課題でしたが、本技術を導入したことで、一部の区画では収量が50%増加しました。」",
+                "case_h4_2": "事例2: 北海道 コメ農家",
+                "case_p2": "「本製品のおかげで、厳しい気候条件でも安心して作付けできます。高温障害が減ると、出荷時のコメの価格が倍近く変わるので助かっています。」",
+                "members_h2": "メンバー",
+                "member_ceo_title_name": "CEO　平田 裕也",
+                "member_ceo_desc": "2000年福井県農家生まれ。東京大学工学部物理工学科を首席で卒業後、先端工学の農業応用に従事。2025年に株式会社ミノリカを創業。経済産業省NEDO Entrepreneur Program採択。",
+                "member_cto_title_name": "CTO　長浜 義典",
+                "member_cto_desc": "九州大学農学部卒業後、アルコールを活用した植物ワクチンを世界に先駆けて独自開発。全国の農家の方々と密に連携し、製品の導入支援やフィードバック収集を行う。",
+                "company_h2": "会社情報",
+                "company_name_th": "会社名",
+                "company_name_td": "株式会社MINORICA",
+                "company_address_th": "所在地",
+                "company_address_td": "〒113-0023 東京都文京区向丘2丁目3-10 東大前HiRAKU GATE 3F",
+                "company_established_th": "設立",
+                "company_established_td": "2025年2月20日",
+                "company_capital_th": "資本金",
+                "company_capital_td": "500万円",
+                "company_founder_th": "創業者",
+                "company_founder_td": "平田 裕也",
+                "company_business_th": "事業内容",
+                "company_business_td": "バイオスティミュラント関連資材の研究開発・製造・販売",
+                "news_h2": "ニュース",
+                "news_link1": "経済産業省J-starX若手起業家プログラムに採択",
+                "news_link2": "国内最大規模の技術起業支援プログラム1st Roundに採択",
+                "news_link3": "広島県農業技術指導所にて技術説明会を実施",
+                "contact_h2": "お問い合わせ",
+                "contact_desc": "ご質問、ご相談などございましたら、下記フォームよりお気軽にお問い合わせください。",
+                "contact_name_label": "お名前",
+                "contact_furigana_label": "フリガナ",
+                "contact_company_label": "会社名・団体名",
+                "contact_email_label": "メールアドレス",
+                "contact_tel_label": "電話番号",
+                "contact_inquiry_type_label": "お問い合わせ種別",
+                "contact_inquiry_type_option_default": "選択してください",
+                "contact_inquiry_type_option_product": "製品に関するお問い合わせ",
+                "contact_inquiry_type_option_press": "取材のご依頼",
+                "contact_inquiry_type_option_recruit": "採用に関するお問い合わせ",
+                "contact_inquiry_type_option_other": "その他",
+                "contact_message_label": "お問い合わせ内容",
+                "contact_submit_btn": "送信する",
+                "contact_privacy_agreement": "お問い合わせいただく前に、必ず",
+                "contact_privacy_policy_link_text": "プライバシーポリシー",
+                "contact_privacy_agreement_end": "をご確認ください。",
+                "privacy_h2": "プライバシーポリシー",
+                "privacy_p": "当社は、お問い合わせフォームを通じて、お名前、メールアドレス、電話番号などの個人情報を取得します。これらの個人情報は、以下の目的のために利用いたします。事前にご本人の同意を得ることなく、個人情報を第三者に提供することはありません。",
+                "privacy_li1": "お問い合わせへの回答およびご連絡のため",
+                "privacy_li2": "当社の製品・サービスに関する情報提供のため",
+                "privacy_li3": "サービスの改善および新たなサービスの開発のため",
+                "footer_text": "© 2025 MINORICA Co., Ltd. All Rights Reserved.",
+            },
+            "en": {
+                // ... (既存の英語翻訳コンテンツ)
+                "page_title": "MINORICA Inc.",
+                "page_description": "MINORICA Inc. is a biotechnology company that researches and develops biostimulant technology to conquer heat stress. We contribute to sustainable food production systems under climate change.",
+                "nav_products": "Products",
+                "nav_members": "Members",
+                "nav_company": "Company",
+                "nav_contact": "Contact",
+                "hero_h1": "Biostimulant Technology to<br>Conquer High Temperature Stress",
+                "hero_p": "MINORICA Inc. is a biotechnology company researching, developing, and socially implementing alcohol biostimulants to support grain production under climate change.",
+                "about_h2": "ABOUT",
+                "about_p1": "MINORICA Inc. aims to build sustainable food production systems, leveraging cutting-edge biotechnology to research and develop alcohol biostimulants. We help farmers worldwide overcome challenges and achieve more abundant and stable harvests.",
+                "about_p2": "Our mission is to contribute to stable food supply while harmonizing with the global environment.",
+                "products_h2": "Products",
+                "products_h3": "What are Alcohol Biostimulants (ABS)?",
+                "products_p1": "Biostimulants (BS) are innovative agricultural materials that enhance plant biological activity and their ability to adapt to changes in the growing environment. Unlike chemical fertilizers and pesticides, they work by enhancing a plant's natural physiological functions, which has garnered significant attention both in Japan and internationally.",
+                "products_p2": "Our Alcohol Biostimulants have been proven to be particularly effective, especially in the production of major grains like rice and wheat. Being a low-viscosity liquid, they can be rapidly sprayed using drones. We also independently research and develop materials that improve the absorption efficiency of ABS by plants.",
+                "products_h3_2": "Features of ABS",
+                "products_ul_li_1": "<strong>Yield Improvement:</strong> Enhances the photosynthetic efficiency of crops and promotes better root growth, leading to a significant increase in expected yields.",
+                "products_ul_li_2": "<strong>Quality Enhancement:</strong> Contributes to improving the nutritional value and taste of grains, such as protein content and sugar levels.",
+                "products_ul_li_3": "<strong>Enhanced Stress Tolerance:</strong> Protects crops from abiotic stresses like drought, high temperatures, low temperatures, and salinity, reducing the risk of poor growth.",
+                "products_ul_li_4": "<strong>Cost Efficiency:</strong> Can be produced and applied with low-cost materials, offering high sustainability compared to conventional chemical fertilizers and biostimulants.",
+                "products_ul_li_5": "<strong>High Safety:</strong> Uses pH-neutral and naturally derived ingredients, making it a soil-friendly product.",
+                "case_h4_1": "Case Study 1: Wheat Farmer in Aichi Prefecture",
+                "case_p1": "“Heat stress in summer was a challenge, but by introducing this biostimulant, yields in some plots increased by 50%.”",
+                "case_h4_2": "Case Study 2: Rice Farmer in Hokkaido",
+                "case_p2": "“Thanks to this product, I can plant with confidence even in harsh climatic conditions. Reducing heat damage almost doubles the price of rice at the time of shipping, which is a great help.”",
+                "members_h2": "Members",
+                "member_ceo_title_name": "CEO Yuya Hirata",
+                "member_ceo_desc": "Born in 2000 into a farming family in Fukui Prefecture. After graduating at the top of his class from the Department of Applied Physics, Faculty of Engineering at the University of Tokyo, he specialized in the application of advanced engineering to agriculture. Founded MINORICA Inc. in 2025. Selected for the Ministry of Economy, Trade and Industry's NEDO Entrepreneur Program.",
+                "member_cto_title_name": "CTO Yoshinori Nagahama",
+                "member_cto_desc": "After graduating from the Faculty of Agriculture at Kyushu University, he pioneered the independent development of alcohol biostimulants. He works closely with farmers nationwide to support product implementation and gather feedback.",
+                "company_h2": "Company Information",
+                "company_name_th": "Company Name",
+                "company_name_td": "MINORICA Inc.",
+                "company_address_th": "Location",
+                "company_address_td": "3F Todaimae HiRAKU GATE, 2-3-10 Mukogaoka, Bunkyo-ku, Tokyo 113-0023, Japan",
+                "company_established_th": "Established",
+                "company_established_td": "February 20, 2025",
+                "company_capital_th": "Capital",
+                "company_capital_td": "5 million JPY",
+                "company_founder_th": "Founder",
+                "company_founder_td": "Yuya Hirata",
+                "company_business_th": "Business Activities",
+                "company_business_td": "Research, development, manufacturing, and sales of biostimulant-related materials",
+                "news_h2": "News",
+                "news_link1": "Selected for the J-StarX Young Entrepreneur Program by METI",
+                "news_link2": "Selected for 1st Round, a large-scale technology entrepreneur support program",
+                "news_link3": "Held a technical briefing at the Hiroshima Prefectural Agricultural Technology Guidance Center",
+                "contact_h2": "Contact Us",
+                "contact_desc": "If you have any questions or consultations, please feel free to contact us using the form below.",
+                "contact_name_label": "Name",
+                "contact_furigana_label": "Furigana",
+                "contact_company_label": "Company/Organization Name",
+                "contact_email_label": "Email Address",
+                "contact_tel_label": "Phone Number",
+                "contact_inquiry_type_label": "Inquiry Type",
+                "contact_inquiry_type_option_default": "Please select",
+                "contact_inquiry_type_option_product": "Product Inquiry",
+                "contact_inquiry_type_option_press": "Media Request",
+                "contact_inquiry_type_option_recruit": "Recruitment Inquiry",
+                "contact_inquiry_type_option_other": "Other",
+                "contact_message_label": "Inquiry Details",
+                "contact_submit_btn": "Send",
+                "contact_privacy_agreement": "Before making an inquiry, please be sure to read our ",
+                "contact_privacy_policy_link_text": "Privacy Policy",
+                "contact_privacy_agreement_end": ".",
+                "privacy_h2": "Privacy Policy",
+                "privacy_p": "Our company acquires personal information such as name, email address, and phone number through the inquiry form. This personal information will be used for the following purposes. We will not provide personal information to third parties without prior consent of the individual.",
+                "privacy_li1": "For responding to inquiries and contacting you",
+                "privacy_li2": "For providing information about our products and services",
+                "privacy_li3": "For improving services and developing new services",
+                "footer_text": "© 2025 MINORICA Co., Ltd. All Rights Reserved.",
+            }
+        };
+    
+        function switchLanguage(lang) {
+            let currentLang = lang;
+            localStorage.setItem('lang', lang);
+    
+            // 全ての翻訳可能な要素を更新
+            document.querySelectorAll('[data-key]').forEach(element => {
+                const key = element.dataset.key;
+                if (translations[currentLang] && translations[currentLang][key]) {
+                    if (key === 'hero_h1' || key.startsWith('products_ul_li')) {
+                        element.innerHTML = translations[currentLang][key];
+                    } else if (key.endsWith('_label')) {
+                        // labelタグ内のテキストとspanタグを保持
+                        const span = element.querySelector('span');
+                        element.textContent = translations[currentLang][key] + ' ';
+                        if (span) {
+                            element.appendChild(span);
+                        }
+                    } else {
+                        element.textContent = translations[currentLang][key];
+                    }
+                }
+            });
+    
+            // selectタグのオプションを更新
+            const inquiryTypeSelect = document.getElementById('inquiry_type');
+            if (inquiryTypeSelect) {
+                const langOptions = translations[currentLang];
+                inquiryTypeSelect.querySelector('option[value=""]').textContent = langOptions.contact_inquiry_type_option_default;
+                inquiryTypeSelect.querySelector('option[value="product"]').textContent = langOptions.contact_inquiry_type_option_product;
+                inquiryTypeSelect.querySelector('option[value="press"]').textContent = langOptions.contact_inquiry_type_option_press;
+                inquiryTypeSelect.querySelector('option[value="recruit"]').textContent = langOptions.contact_inquiry_type_option_recruit;
+                inquiryTypeSelect.querySelector('option[value="other"]').textContent = langOptions.contact_inquiry_type_option_other;
+            }
+    
+            // 言語ボタンのアクティブ状態を更新
+            document.querySelectorAll('.lang-btn').forEach(btn => {
+                if (btn.dataset.lang === lang) {
+                    btn.classList.add('active');
+                } else {
+                    btn.classList.remove('active');
+                }
+            });
+    
+            // ページタイトルとメタディスクリプションを更新
+            const langInfo = translations[lang];
+            document.title = langInfo.page_title;
+            document.querySelector('meta[name="description"]').setAttribute('content', langInfo.page_description);
+            document.querySelector('meta[property="og:title"]').setAttribute('content', langInfo.page_title);
+            document.querySelector('meta[property="og:description"]').setAttribute('content', langInfo.page_description);
+    
+        }
+    
+        document.addEventListener('DOMContentLoaded', function() {
+            const mobileMenu = document.getElementById('mobile-menu');
+            const mainNav = document.getElementById('main-nav');
+            const navLinks = mainNav.querySelectorAll('a');
+            const contactForm = document.querySelector('#contact-section form');
+            const submitButton = document.getElementById('submitFormButton');
+            const recaptchaTokenField = document.getElementById('recaptcha_token');
+    
+            if (mobileMenu && mainNav) {
+                mobileMenu.addEventListener('click', function() {
+                    mobileMenu.classList.toggle('active');
+                    mainNav.classList.toggle('active');
+    
+                    if (mainNav.classList.contains('active')) {
+                        document.body.style.overflow = 'hidden';
+                    } else {
+                        document.body.style.overflow = '';
+                    }
+                });
+    
+                navLinks.forEach(link => {
+                    link.addEventListener('click', function(e) {
+                        e.preventDefault();
+                        const targetId = this.getAttribute('href');
+                        const targetSection = document.querySelector(targetId);
+    
+                        if (targetSection) {
+                            const headerHeight = document.querySelector('header').offsetHeight;
+                            const offsetTop = targetSection.offsetTop - headerHeight;
+    
+                            window.scrollTo({
+                                top: offsetTop,
+                                behavior: 'smooth'
+                            });
+                        }
+    
+                        if (mobileMenu.classList.contains('active')) {
+                            mobileMenu.classList.remove('active');
+                            mainNav.classList.remove('active');
+                            document.body.style.overflow = '';
+                        }
+                    });
+                });
+            }
+            if (contactForm && submitButton && recaptchaTokenField) {
+                submitButton.addEventListener('click', function(event) {
+                    event.preventDefault();
+                    grecaptcha.ready(function() {
+                        grecaptcha.execute('6LdkloErAAAAAHW7rMxD5FePWX5q5W7EeSjTbTvO', { action: 'submit_contact' }).then(function(token) {
+                            recaptchaTokenField.value = token;
+                            contactForm.submit();
+                        });
+                    });
+                });
+            }
+            
+            // 言語切り替え機能
+            let currentLang = localStorage.getItem('lang') || 'ja';
+            if (!translations[currentLang]) {
+                currentLang = 'ja';
+                localStorage.setItem('lang', 'ja');
+            }
+            
+            switchLanguage(currentLang);
+            
+            document.getElementById('lang-ja').addEventListener('click', () => switchLanguage('ja'));
+            document.getElementById('lang-en').addEventListener('click', () => switchLanguage('en'));
+        });
+    </script>
+    </body>
+    </html>
 </body>
 </html>
