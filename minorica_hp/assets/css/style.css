@@ -412,18 +412,19 @@ footer p {
             margin: 0 auto; /* この行を追加または修正 */
             text-align: center; /* p要素を中央揃えにする */
         }
-        .hero-section .hero-text { /* クラス名を指定 */
+        .hero-section .hero-text {
             font-size: 18px;
             font-weight: 300;
             max-width: 800px;
-            margin: 0 auto;
-            text-align: center; /* p要素を中央揃えにする */
+            margin-top: 20px; /* 見出しとの間に余白を追加 */
         }
         /* ヒーローセクションのcontainerを縦並びにする */
         .hero-section .container {
-            flex-direction: column;
-            align-items: center;
-            text-align: center; /* 子要素内のテキストも中央揃えにする */
+            display: flex; /* flexboxを維持 */
+            flex-direction: column; /* 子要素を縦に並べる */
+            align-items: center; /* 水平方向の中央揃え */
+            justify-content: center; /* 垂直方向の中央揃え */
+            text-align: center; /* テキスト自体も中央揃えに */
         }
 
         /* MINORICAについてセクション */
