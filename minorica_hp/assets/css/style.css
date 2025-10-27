@@ -896,6 +896,16 @@ footer p {
             width: auto; /* アスペクト比を維持 */
         }
 
+        .article-content .article-image {
+            display: block;
+            margin: 40px auto; /* 上下左右の余白と中央揃え */
+            max-width: 100%;   /* 親要素の幅を100%として、それ以上にはならない */
+            width: auto;       /* 幅を自動調整 */
+            height: auto;      /* 高さを自動調整し、アスペクト比を維持 */
+            border-radius: 8px;
+            /* box-shadow: 0 4px 8px rgba(0,0,0,0.1); 少し影を追加して見栄えを良くする */
+        }
+
 
 
 
