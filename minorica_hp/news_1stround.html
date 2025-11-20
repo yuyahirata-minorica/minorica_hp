@@ -5,6 +5,13 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>株式会社MINORICA、第12回「1stRound」支援先に採択 - 株式会社ミノリカ</title>
 
+    <meta property="og:title" content="株式会社MINORICA、第12回「1stRound」支援先に採択">
+    <meta property="og:description" content="株式会社MINORICAは、東京大学協創プラットフォーム開発株式会社が運営するアクセラレータープログラム「1stRound」の第12回支援先として採択されました。">
+    <meta property="og:type" content="article"> 
+    <meta property="og:url" content="https://minorica-agri.com/news_1stround"> 
+    <meta property="og:image" content="https://minorica-agri.com/assets/img/minorica_1stround.png"> 
+    <meta property="og:site_name" content="株式会社ミノリカ">
+    <meta name="twitter:card" content="summary_large_image">
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="icon" href="assets/img/logo_only.png" type="image/png">
     <style>
@@ -29,6 +36,16 @@
             margin-bottom: 30px;
             border-bottom: 2px solid #eaf7ed;
             padding-bottom: 15px;
+        }
+        /* ▼▼▼ 日付用のスタイルを追加 ▼▼▼ */
+        .article-content .article-date {
+            font-size: 14px;
+            color: #777;
+            margin-bottom: 30px;
+            display: block;
+            text-align: left; /* 変更 */
+            border-bottom: 2px solid #eaf7ed; /* 変更 */
+            padding-bottom: 15px; /* 変更 */
         }
         .article-content p {
             font-size: 16px;
@@ -64,9 +81,8 @@
             <nav class="nav-wrapper" id="main-nav">
                 <ul>
                     <li><a href="index.html#products-section">製品紹介</a></li>
-                    <!-- <li><a href="index.html#members-section">メンバー</a></li> -->
                     <li><a href="index.html#company-section">会社情報</a></li>
-                    <li><a href="#news-section" data-key="news_h2">ニュース</a></li>
+                    <li><a href="index.html#news-section">ニュース</a></li>
                     <li><a href="index.html#contact-section">お問い合わせ</a></li>
                 </ul>
             </nav>
@@ -81,6 +97,7 @@
         <section class="article-section">
             <div class="article-content">
                 <h2>株式会社MINORICA、第12回「1stRound」支援先に採択</h2>
+                <span class="article-date">2025.04.14</span>
                 <p>
                     株式会社MINORICA（本社：東京都文京区、CEO: 平田裕也、CTO: 長浜義典）は、東京大学協創プラットフォーム開発株式会社（本社：東京都文京区本郷、代表取締役社長 植田浩輔、以下、「東大IPC」）が運営する国内最大規模を誇る大学・研究機関共催のアクセラレータープログラム「1stRound」の第12回支援先として採択されました。
                 </p>
@@ -139,6 +156,29 @@
                     mainNav.classList.toggle('active');
                 });
             }
+        
+            // // --- URLの#を消してスクロールする処理を追加 ---
+            // const navLinks = document.querySelectorAll('.nav-wrapper .nav-links a[data-target]');
+            //     navLinks.forEach(link => {
+            //         link.addEventListener('click', function(e) {
+            //             e.preventDefault(); // デフォルトのリンク動作を停止
+            //             const targetId = this.getAttribute('data-target');
+            //             if (targetId) {
+            //                 sessionStorage.setItem('scrollToSection', targetId); // 行き先をセッションに保存
+            //             }
+            //             window.location.href = this.getAttribute('href'); // index.htmlに遷移
+            //         });
+            //     });
+
+            // // ロゴのリンクにも同様の処理を追加
+            // const logoLink = document.querySelector('header .logo a');
+            // if (logoLink) {
+            //     logoLink.addEventListener('click', function(e) {
+            //         e.preventDefault();
+            //         sessionStorage.removeItem('scrollToSection'); // トップに戻るだけなので、スクロール指定は削除
+            //         window.location.href = this.getAttribute('href');
+            //     });
+            // }
         });
     </script>
 </body>
