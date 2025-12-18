@@ -1,0 +1,732 @@
+/* Reset & Base */
+:root {
+    --primary-color: #327d31; /* ブランドグリーン */
+    --primary-dark: #266125;
+    --accent-color: #ff9800; /* ロゴのオレンジ */
+    --text-color: #333333;
+    --light-gray: #f5f7fa;
+    --border-color: #e0e0e0;
+    --white: #ffffff;
+    --font-base: 'Noto Sans JP', 'Roboto', sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    font-family: var(--font-base);
+    line-height: 1.8;
+    color: var(--text-color);
+    background-color: var(--white);
+    -webkit-font-smoothing: antialiased;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+    transition: all 0.3s ease;
+}
+
+.container {
+    max-width: 1100px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* Typography */
+h1, h2, h3 {
+    font-weight: 700;
+    line-height: 1.4;
+    margin-top: 0;
+}
+
+.section-subtitle {
+    display: block;
+    color: var(--primary-color);
+    font-weight: 700;
+    font-size: 16px;
+    letter-spacing: 2px;
+    margin-bottom: 10px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.section-desc {
+    max-width: 700px;
+    margin: 0 auto;
+    color: #666;
+}
+
+.text-center { text-align: center; }
+
+/* Header部分の修正 */
+
+.logo a {
+    display: flex;
+    align-items: center;
+    gap: 12px; /* 間隔を少し広げる */
+    text-decoration: none;
+}
+
+.company-logo {
+    height: 44px; /* ロゴマークも少し大きく */
+    width: auto;
+}
+
+/* 新しく追加・強化するクラス */
+.logo-text {
+    font-family: 'Roboto', 'Inter', sans-serif; /* 力強いサンセリフ体 */
+    font-weight: 900; /* 最も太いウェイト (Black) */
+    font-size: 28px; /* サイズアップ */
+    color: var(--primary-color); /* 緑ではなく、ほぼ黒(#111)にすることで芯の強さを表現 */
+    letter-spacing: -0.5px; /* 文字間をわずかに詰めて塊感を出す */
+    line-height: 1;
+    text-transform: uppercase; /* 大文字強制（念のため） */
+}
+
+
+/* Buttons */
+.btn {
+    display: inline-block;
+    padding: 12px 30px;
+    border-radius: 50px;
+    font-weight: bold;
+    font-size: 16px;
+    cursor: pointer;
+    text-align: center;
+    transition: all 0.3s ease;
+}
+
+.btn-primary {
+    background-color: var(--primary-color);
+    color: var(--white);
+    border: 2px solid var(--primary-color);
+}
+
+.btn-primary:hover {
+    background-color: var(--primary-dark);
+    border-color: var(--primary-dark);
+    transform: translateY(-2px);
+    box-shadow: 0 5px 15px rgba(50, 125, 49, 0.3);
+}
+
+.btn-outline {
+    background-color: transparent;
+    color: var(--white);
+    border: 2px solid var(--white);
+}
+
+.btn-outline:hover {
+    background-color: var(--white);
+    color: var(--primary-color);
+}
+
+/* Header */
+header {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: var(--white);
+    backdrop-filter: blur(10px);
+    box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+    z-index: 1000;
+    padding: 15px 0;
+    transition: all 0.3s ease;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo a {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    font-size: 24px;
+    font-weight: bold;
+    color: var(--primary-color);
+}
+
+.company-logo {
+    height: 40px;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    gap: 30px;
+}
+
+nav ul li a {
+    font-size: 15px;
+    font-weight: 500;
+    color: #555;
+}
+
+nav ul li a:hover {
+    color: var(--primary-color);
+}
+
+.btn-nav-contact {
+    background-color: var(--primary-color);
+    color: var(--white) !important;
+    padding: 8px 20px;
+    border-radius: 4px;
+}
+
+.lang-switch a {
+    font-family: 'Roboto', sans-serif;
+    font-weight: bold;
+    border: 1px solid #ddd;
+    padding: 5px 10px;
+    border-radius: 4px;
+}
+
+/* Hero Section */
+.hero-section {
+    position: relative;
+    height: 100vh;
+    min-height: 600px;
+    background-image: url('../img/hero_background.png');
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--white);
+    text-align: center;
+}
+
+.hero-overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(rgba(0,0,0,0.3), rgba(0,0,0,0.5));
+}
+
+.hero-content {
+    position: relative;
+    z-index: 1;
+}
+
+.hero-content h1 {
+    font-size: 48px; /* PCサイズ */
+    margin-bottom: 20px;
+    text-shadow: 0 2px 10px rgba(0,0,0,0.3);
+}
+
+.hero-content p {
+    font-size: 18px;
+    margin-bottom: 40px;
+    opacity: 0.9;
+}
+
+.hero-cta {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+/* Common Section Style */
+.section {
+    padding: 100px 0;
+}
+
+.bg-light {
+    background-color: var(--light-gray);
+}
+
+/* Products */
+.product-grid {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    margin-top: 60px;
+}
+
+.product-grid.reverse {
+    flex-direction: row-reverse;
+}
+
+.product-img {
+    flex: 1;
+}
+
+.product-img img {
+    border-radius: 10px;
+    box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+}
+
+.product-text {
+    flex: 1;
+}
+
+.feature-list {
+    list-style: none;
+    padding: 0;
+}
+
+.feature-list li {
+    margin-bottom: 15px;
+    padding-left: 20px;
+    position: relative;
+}
+
+.feature-list li::before {
+    content: '';
+    width: 8px;
+    height: 8px;
+    background-color: var(--accent-color);
+    border-radius: 50%;
+    position: absolute;
+    left: 0;
+    top: 10px;
+}
+
+/* News */
+.news-list {
+    max-width: 800px;
+    margin: 40px auto 0;
+}
+
+.news-item {
+    display: flex;
+    align-items: baseline;
+    padding: 20px 0;
+    border-bottom: 1px solid var(--border-color);
+    transition: all 0.3s ease;
+}
+
+.news-item:hover {
+    background-color: #f9f9f9;
+    padding-left: 10px;
+    border-bottom-color: var(--primary-color);
+}
+
+.news-item time {
+    font-family: 'Roboto', sans-serif;
+    color: #888;
+    width: 120px;
+    flex-shrink: 0;
+}
+
+.tag {
+    display: inline-block;
+    background-color: #eee;
+    font-size: 12px;
+    padding: 2px 8px;
+    border-radius: 3px;
+    margin-right: 10px;
+    vertical-align: middle;
+}
+
+.news-content p {
+    margin: 0;
+    display: inline;
+    font-weight: 500;
+}
+
+/* Company */
+.company-wrapper {
+    max-width: 800px;
+    margin: 40px auto 0;
+    background: var(--white);
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.05);
+}
+
+.company-list .row {
+    display: flex;
+    border-bottom: 1px solid #eee;
+    padding: 15px 0;
+}
+
+.company-list .row:last-child {
+    border-bottom: none;
+}
+
+.company-list dt {
+    width: 120px;
+    font-weight: bold;
+    color: var(--primary-color);
+    flex-shrink: 0;
+}
+
+.company-list dd {
+    margin: 0;
+    flex-grow: 1;
+}
+
+
+/* MVV Section (Balanced Typography Style) */
+.mvv-container {
+    max-width: 960px;
+    margin: 0 auto;
+    padding: 40px 0;
+}
+
+.mvv-row {
+    display: flex;
+    align-items: baseline; /* テキストのベースラインで揃える */
+    padding: 40px 0;
+    border-bottom: 1px solid #eee;
+}
+
+.mvv-row:first-child {
+    border-top: 1px solid #eee;
+}
+
+.mvv-label {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px; /* サイズアップ */
+    font-weight: 700;
+    letter-spacing: 1px;
+    color: var(--primary-color); /* ブランドカラー */
+    width: 200px; /* 幅を少し広げてゆとりを持たせる */
+    flex-shrink: 0;
+    text-transform: uppercase;
+}
+
+.mvv-text {
+    font-family: 'Roboto', sans-serif;
+    font-size: 24px; /* サイズダウンして落ち着かせる */
+    font-weight: 500; /* 太すぎないウェイトに */
+    line-height: 1.6;
+    color: #333;
+    margin: 0;
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+    .mvv-row {
+        flex-direction: column;
+        padding: 30px 0;
+    }
+
+    .mvv-label {
+        margin-bottom: 10px;
+        font-size: 14px;
+        color: #888; /* スマホではラベルを少し控えめに */
+    }
+
+    .mvv-text {
+        font-size: 20px;
+        line-height: 1.5;
+    }
+}
+
+
+/* Contact */
+.contact-form-wrapper {
+    max-width: 600px;
+    margin: 40px auto 0;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 8px;
+    font-size: 14px;
+}
+
+.required { color: red; }
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 16px;
+    box-sizing: border-box;
+    transition: border-color 0.3s;
+    font-family: inherit;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+    border-color: var(--primary-color);
+    outline: none;
+}
+
+.form-group textarea {
+    min-height: 150px;
+    resize: vertical;
+}
+
+.btn-block {
+    width: 100%;
+    display: block;
+}
+
+/* Footer */
+footer {
+    background-color: #222;
+    color: #fff;
+    padding: 60px 0 20px;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 40px;
+    border-bottom: 1px solid #444;
+    padding-bottom: 20px;
+}
+
+.footer-links {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+
+.footer-links a {
+    font-size: 14px;
+    color: #aaa;
+}
+
+.copyright {
+    text-align: center;
+    font-size: 12px;
+    color: #777;
+}
+
+/* Animations */
+.fade-in { opacity: 0; animation: fadeIn 1s forwards; }
+.fade-up { opacity: 0; transform: translateY(20px); transition: opacity 0.6s ease-out, transform 0.6s ease-out; }
+.fade-up.visible { opacity: 1; transform: translateY(0); }
+
+.delay-1 { animation-delay: 0.3s; }
+.delay-2 { animation-delay: 0.6s; }
+
+@keyframes fadeIn {
+    to { opacity: 1; }
+}
+
+/* Mobile Responsive */
+@media (max-width: 768px) {
+    .hero-content h1 { font-size: 32px; }
+    .hero-content p { font-size: 15px; }
+    
+    .product-grid { flex-direction: column; }
+    .product-grid.reverse { flex-direction: column; }
+    
+    .menu-toggle { display: flex; flex-direction: column; justify-content: space-between; width: 30px; height: 20px; cursor: pointer; z-index: 1100;}
+    .menu-toggle .bar { width: 100%; height: 2px; background-color: #333; transition: 0.3s; }
+    
+    nav {
+        position: fixed;
+        top: 0; right: -100%;
+        width: 80%;
+        height: 100vh;
+        background: var(--white);
+        padding: 80px 40px;
+        transition: 0.3s;
+        box-shadow: -5px 0 15px rgba(0,0,0,0.1);
+    }
+    
+    nav.active { right: 0; }
+    nav ul { flex-direction: column; align-items: flex-start; }
+    
+    .company-list .row { flex-direction: column; }
+    .company-list dt { margin-bottom: 5px; }
+}
+
+/* Team Section */
+.team-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); /* レスポンシブ対応のグリッド */
+    gap: 40px;
+    margin-top: 60px;
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.team-member {
+    text-align: center;
+}
+
+/* 写真部分 */
+.member-img {
+    width: 100%;
+    max-width: 320px; /* 写真の最大幅 */
+    aspect-ratio: 3 / 4; /* 縦長のポートレート比率 */
+    margin: 0 auto 25px;
+    border-radius: 8px; /* 角を少し丸く */
+    overflow: hidden;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.08);
+    position: relative;
+}
+
+.member-img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* 枠に合わせてトリミング */
+    transition: transform 0.6s cubic-bezier(0.25, 0.8, 0.25, 1);
+    filter: grayscale(100%); /* デフォルトはモノクロでクールに */
+}
+
+/* ホバー時にカラーになり、少しズームする */
+.team-member:hover .member-img img {
+    transform: scale(1.05);
+    filter: grayscale(0%);
+}
+
+/* テキスト部分 */
+.member-role {
+    display: block;
+    font-size: 13px;
+    font-weight: 700;
+    color: var(--primary-color);
+    margin-bottom: 5px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+.member-name {
+    font-size: 22px;
+    margin: 0 0 15px;
+    font-weight: 700;
+    color: #222;
+    line-height: 1.3;
+}
+
+.member-en {
+    display: block;
+    font-size: 14px;
+    color: #999;
+    font-weight: 400;
+    margin-top: 3px;
+    font-family: 'Roboto', sans-serif;
+}
+
+.member-desc {
+    font-size: 14px;
+    color: #666;
+    line-height: 1.8;
+    text-align: left; /* 文章は左揃えの方が読みやすい */
+    max-width: 320px; /* 写真幅に合わせる */
+    margin: 0 auto;
+}
+
+/* 写真部分 */
+.member-img {
+    width: 100%;
+    max-width: 200px; /* 円形に合わせて少し小さく */
+    aspect-ratio: 1 / 1; /* 正方形にする */
+    margin: 0 auto 25px;
+    border-radius: 50%; /* 完全な円 */
+    overflow: hidden;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.08);
+    position: relative;
+}
+
+
+.member-desc {
+    font-size: 14px;
+    color: #666;
+    line-height: 1.8;
+    text-align: left;
+    max-width: 260px; /* テキスト幅も写真に合わせて調整 */
+    margin: 0 auto;
+}
+/* 下層ページ用（ヘッダー被り防止） */
+.page-wrapper {
+    padding-top: 1px;
+    min-height: 1vh;
+}
+
+/* ニュース記事全体を中央寄せにする */
+.news-article {
+    max-width: 800px; /* 記事の幅を800pxに制限 */
+    margin: 0 auto;   /* 上下0、左右自動（＝中央寄せ） */
+    margin-top: 100px;
+}
+
+/* ヘッダー部分 */
+.news-detail-header {
+    margin-bottom: 40px;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 20px;
+    /* タイトルも中央揃えにしたい場合は以下を有効にしてください */
+    /* text-align: center; */ 
+}
+
+.news-detail-header h1 {
+    font-size: 28px;
+    margin-bottom: 15px;
+    line-height: 1.4;
+}
+
+.news-detail-header time {
+    display: block; /* ブロック要素にして改行させる */
+    color: #888;
+    font-family: 'Roboto', sans-serif;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+.news-body {
+    line-height: 1.8;
+    color: #444;
+    /* ここにあった max-width は削除し、親の .news-article で管理します */
+}
+
+.news-body img {
+    display: block; /* 画像をブロック要素に */
+    margin: 30px auto; /* 画像の上下に余白、左右中央寄せ */
+    border-radius: 8px;
+    max-width: 100%;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.05); /* うっすら影をつけてリッチに */
+}
+
+/* News More Button */
+.news-more {
+    margin-top: 40px;
+}
+
+.btn-outline-dark {
+    background-color: transparent;
+    color: #555;
+    border: 1px solid #ccc;
+    padding: 10px 30px;
+    border-radius: 50px;
+    font-size: 14px;
+    transition: all 0.3s ease;
+}
+
+.btn-outline-dark:hover {
+    background-color: #333;
+    color: #fff;
+    border-color: #333;
+}
+
+/* Page Spacing for Subpages */
+.pt-150 {
+    padding-top: 150px; /* 固定ヘッダー分の余白 */
+}
+
+.mt-50 {
+    margin-top: 50px;
+}
